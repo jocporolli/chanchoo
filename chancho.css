@@ -1,0 +1,167 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: darkkhaki;
+    height: 28.87em;
+    width: 28.87em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cabeza{
+    height: 20em;
+    width: 22em;
+    background-color: #ffa2d1;
+    border-radius: 50%;
+    position: absolute;
+    left: 3.5em;
+    top: 7.5em;
+}
+
+.orejas-1{
+    height: 7em;
+    width: 7em;
+    background-color:#ffa2d1;
+    position: absolute;
+    left: 5em;
+    top: 5em;
+    transform: rotate(15deg);
+    border-radius: 0 25px 0 25px;
+    animation: mover1 3s infinite;
+}
+
+.orejas-1:before{
+    content: "";
+    height: 4em;
+    width: 4em;
+    background-color: deeppink;
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
+    border-radius: 5px 20px 100px 20px;
+    box-shadow: 0 0 30px rgb(143, 51, 51);
+    animation: mover1 3s infinite;
+}
+
+@keyframes mover1{
+    25%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(-1deg);
+    }
+}
+
+.orejas-2{
+    height: 7em;
+    width: 7em;
+    background-color:#ffa2d1;
+    position: absolute;
+    left: 17.5em;
+    top: 5em;
+    transform: rotate(75deg);
+    border-radius: 0 25px 0 25px;
+    animation: mover2 3s infinite;
+}
+
+.orejas-2:before{
+    content: "";
+    height: 4em;
+    width: 4em;
+    background-color: deeppink;
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
+    border-radius: 5px 20px 100px 20px;
+    box-shadow: 0 0 30px rgb(143, 51, 51);
+}
+
+@keyframes mover2{
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+}
+
+.hocico{
+    height: 10em;
+    width: 14em;
+    background-color: rgb(255, 59, 164);
+    position: absolute;
+    left: 4em;
+    top: 8em;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(143, 51, 51);
+}
+
+.nariz{
+    height: 1em;
+    width: .5em;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    left: 5em;
+    top: 4em;
+    box-shadow: 0 0 30px rgb(143, 51, 51);
+}
+
+.nariz:before{
+    content: "";
+    height: 1em;
+    width: .5em;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    left: 3em;
+    box-shadow: 0 0 30px rgb(143, 51, 51);
+}
+
+.ojos{
+    height: 1em;
+    width: 1em;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 7em;
+    top: 6em;
+    animation: parpadear 5s infinite;
+    opacity: 1;
+}
+
+.ojos:before{
+    content: "";
+    height: 1em;
+    width: 1em;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 7em;
+}
+
+@keyframes parpadear{
+    0%{
+        opacity: 1;
+    }
+    1%{
+        opacity: 0;
+    }
+    4%{
+        opacity: 1;
+    }
+    8%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+}
